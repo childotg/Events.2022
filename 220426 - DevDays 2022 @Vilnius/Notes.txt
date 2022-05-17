@@ -1,0 +1,13 @@
+Prerequisites:
+- Visual Studio
+- SSMS
+- Azure Portal
+- Synapse
+
+Flow:
+- Synapse overview
+- DataFlow Debug / Start Spark pool
+- Clicks aggregation
+- Parallel copy
+- Data flow
+- Spark job
