@@ -1,0 +1,34 @@
+Serverless Containers with Azure, Containers Instances & Apps
+In the latest years, containers become the new standard to run workloads regardless of the underlying compute runtime. But, the orchestrator cost is still there, in most of the scenarios. With Azure, we can use containers without all the hassle of managing K8s, first with Azure Container Instances and now with Azure Container Apps. Come to this session to see how we made it run in production with those amazing tools.
+
+
+"copy": {
+         "name":"aciCopy",
+         "count": 10
+},
+[concat('name-',copyIndex())]
+
+"rules": [
+          {
+            "name": "queue-based-autoscaling",
+            "custom": {
+              "type": "azure-servicebus",
+              "metadata": {
+                "queueName": "myServiceBusQueue",
+                "messageCount": "20"
+              },
+              "auth": [{
+                "secretRef": "servicebusconnectionstring",
+                "triggerParameter": "connection"
+              }]
+
+Plan:
+- Intro slides
+- Intro Azure pre-existing resources
+- Producer/Consumer demo
+- Docker build/push consumer
+- ACI demo: creation, run, logging, scaling
+- ACI multiple
+- Metric graph
+- ContainerApps demo: creation, scale rules, monitoring, flush, metrics
+- Takeaways slides
