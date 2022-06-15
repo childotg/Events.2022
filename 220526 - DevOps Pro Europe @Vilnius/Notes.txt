@@ -24,7 +24,7 @@ In the latest years, containers become the new standard to run workloads regardl
 
 Plan:
 - Intro slides
-- Intro Azure pre-existing resources
+- Creating resources: SB/queue, Registry
 - Producer/Consumer demo
 - Docker build/push consumer
 - ACI demo: creation, run, logging, scaling
