@@ -11,3 +11,8 @@ Flow:
 - Parallel copy
 - Data flow
 - Spark job
+
+Warmup
+- Serverless DB
+- Data Flow runtime
+- Spark pool
