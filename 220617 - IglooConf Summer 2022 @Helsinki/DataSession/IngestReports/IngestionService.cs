@@ -3,11 +3,6 @@ using Azure.Storage.Blobs.Specialized;
 using IngestReports.Models;
 using Newtonsoft.Json;
 using Parquet;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IngestReports
 {
@@ -91,21 +86,24 @@ namespace IngestReports
         }
         private void UploadBatchPartitioned(object obj, string type, DateTime date, BlobContainerClient container)
         {
-            var blob = container.GetBlobClient($"{_executionEnvironment}/partitioned/" +
+            var blob = container.GetBlobClient(
+                $"{_executionEnvironment}/partitioned/" +
                 $"Type={type}/Year={date.Year}/Month={date.Month.ToString().PadLeft(2, '0')}/Day={date.Day.ToString().PadLeft(2, '0')}/report.json");
             BlobUpload(blob, obj);
         }
 
         private void UploadBatchParquet<T>(IEnumerable<T> obj, string type, DateTime date, BlobContainerClient container) where T : class, new()
         {
-            var blob = container.GetBlobClient($"{_executionEnvironment}/partitioned/" +
+            var blob = container.GetBlobClient(
+                $"{_executionEnvironment}/partitioned/" +
                 $"Type={type}/Year={date.Year}/Month={date.Month.ToString().PadLeft(2, '0')}/Day={date.Day.ToString().PadLeft(2, '0')}/report.parquet");
             BlobUploadParquet(blob, obj);
         }
 
         private void UploadBatchPartitionedAppend(object obj, string type, DateTime date, BlobContainerClient container)
         {
-            var blob = container.GetAppendBlobClient($"{_executionEnvironment}/append/" +
+            var blob = container.GetAppendBlobClient(
+                $"{_executionEnvironment}/append/" +
                 $"Type={type}/Year={date.Year}/report.json");
             BlobAppend(blob, obj);
         }
@@ -152,7 +150,8 @@ namespace IngestReports
         }
         private void UploadBatch(object obj, BlobContainerClient container)
         {
-            var blob = container.GetBlobClient($"{_executionEnvironment}/batch/{Guid.NewGuid()}.json");
+            var blob = container.GetBlobClient(
+                $"{_executionEnvironment}/batch/{Guid.NewGuid()}.json");
             BlobUpload(blob, obj);
         }
     }
