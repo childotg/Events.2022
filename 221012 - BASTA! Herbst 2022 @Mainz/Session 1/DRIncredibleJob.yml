@@ -1,0 +1,5 @@
+extends:
+  template: DRBaseJob.yml
+  parameters:
+    basePath: '221012 - BASTA! Herbst 2022 @Mainz/Session 1/JobsOnDevOps'
+    jobName: 'IncredibleJob'    
