@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DryRun", "DryRun", "{D07765
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IncredibleJob", "IncredibleJob\IncredibleJob.csproj", "{99063CC7-9C8F-4AE0-9E8B-E3B8D665D5CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatAJob", "WhatAJob\WhatAJob.csproj", "{81324EF3-0FAD-42FD-9A7E-F98648749061}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{99063CC7-9C8F-4AE0-9E8B-E3B8D665D5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99063CC7-9C8F-4AE0-9E8B-E3B8D665D5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99063CC7-9C8F-4AE0-9E8B-E3B8D665D5CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81324EF3-0FAD-42FD-9A7E-F98648749061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81324EF3-0FAD-42FD-9A7E-F98648749061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81324EF3-0FAD-42FD-9A7E-F98648749061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81324EF3-0FAD-42FD-9A7E-F98648749061}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
