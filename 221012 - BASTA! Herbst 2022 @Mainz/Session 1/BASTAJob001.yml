@@ -1,0 +1,6 @@
+extends:
+  template: 'BASTARunBaseYAML.yml'
+  parameters:
+    path: '221012 - BASTA! Herbst 2022 @Mainz/Session 1/JobsOnDevOps'
+    project: 'BASTARun'
+    job: 'BASTARun001'
