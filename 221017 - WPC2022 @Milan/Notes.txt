@@ -1,0 +1,21 @@
+Prerequisites:
+- Visual Studio
+- SSMS
+- Azure Portal
+- Synapse
+
+Flow:
+- Synapse overview
+- DataFlow Debug / Start Spark pool
+- Clicks aggregation
+- Parallel copy
+- Data flow
+- Spark job
+
+Warmup
+- Serverless DB
+- Data Flow runtime
+- Spark pool
+
+Links:
+https://www.dremio.com/wp-content/uploads/2022/04/chart-1536x618.png
